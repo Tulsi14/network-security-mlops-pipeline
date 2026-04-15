@@ -1,6 +1,14 @@
 import sys
 import os
 
+import streamlit as st
+
+# Documentation ke hisaab se headless login:
+os.environ["DAGSHUB_USER_TOKEN"] = st.secrets["ab1e5e508ddd8512cdbc05e47b7f6fc4ec60788c"]
+os.environ["MLFLOW_TRACKING_USERNAME"] = st.secrets["Tulsi14"]
+os.environ["MLFLOW_TRACKING_PASSWORD"] = st.secrets["ab1e5e508ddd8512cdbc05e47b7f6fc4ec60788c"]
+os.environ["MLFLOW_TRACKING_URI"] = st.secrets["https://dagshub.com/Tulsi14/network-security-mlops-pipeline.mlflow"]
+
 import certifi
 ca = certifi.where()
 
