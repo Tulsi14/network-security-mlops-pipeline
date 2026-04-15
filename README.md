@@ -23,6 +23,29 @@ This project is an **End-to-End MLOps Pipeline** designed to detect and classify
 
 ---
 
+
+## 📂 Repository Structure
+
+```text
+📦 network-security-mlops-pipeline
+ ┣ 📂 final_model/                    # Serialized production models (preprocessor.pkl, model.pkl)
+ ┣ 📂 networksecurity/                # Main Source Code (src)
+ ┃ ┣ 📂 components/                   # Core ML modules (Ingestion, Transformation, Trainer)
+ ┃ ┣ 📂 constant/                     # Environment variables and system constants
+ ┃ ┣ 📂 entity/                       # Data classes for configuration and artifacts
+ ┃ ┣ 📂 exception/                    # Custom Exception Handling tracking line numbers
+ ┃ ┣ 📂 logging/                      # Custom centralized logger
+ ┃ ┣ 📂 pipeline/                     # Training and Batch Prediction Pipelines
+ ┃ ┗ 📂 utils/                        # Shared utility functions (I/O, object loading)
+ ┣ 📂 prediction_output/              # Generated batch inference CSV files (Full Data)
+ ┣ 📂 templates/                      # Jinja2 HTML templates for the API UI
+ ┣ 📜 app.py                          # FastAPI Application Entry Point
+ ┣ 📜 main.py                         # Manual Pipeline Execution Script
+ ┣ 📜 setup.py                        # Package building and distribution
+ ┣ 📜 requirements.txt                # Project dependencies
+ ┗ 📜 README.md                       # Project documentation
+ 
+
 ##  How to Run This Project Locally
 
 Follow these steps to set up and run the project on your local machine.
@@ -35,7 +58,7 @@ Make sure you have the following installed:
 
 ### Step 1: Clone the Repository
 Bash
-git clone [https://github.com/your-username/network-security-mlops-pipeline.git](https://github.com/your-username/network-security-mlops-pipeline.git)
+git clone [https://github.com/Tulsi14/network-security-mlops-pipeline.git](https://github.com/Tulsi14/network-security-mlops-pipeline.git)
 cd network-security-mlops-pipeline
 
 ### Step 2: Create a Virtual Environment
