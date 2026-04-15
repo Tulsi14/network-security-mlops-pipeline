@@ -5,9 +5,9 @@ import streamlit as st
 
 
 os.environ["DAGSHUB_USER_TOKEN"] = st.secrets["DAGSHUB_USER_TOKEN"]
-os.environ["MLFLOW_TRACKING_USERNAME"] = st.secrets["Tulsi14"]
-os.environ["MLFLOW_TRACKING_PASSWORD"] = st.secrets["DAGSHUB_USER_TOKEN"]
-os.environ["MLFLOW_TRACKING_URI"] = st.secrets["https://dagshub.com/Tulsi14/network-security-mlops-pipeline.mlflow"]
+os.environ["MLFLOW_TRACKING_USERNAME"] = st.secrets["MLFLOW_TRACKING_USERNAME"]
+os.environ["MLFLOW_TRACKING_PASSWORD"] = st.secrets["MLFLOW_TRACKING_PASSWORD"]
+os.environ["MLFLOW_TRACKING_URI"] = st.secrets["MLFLOW_TRACKING_URI"]
 
 import certifi
 ca = certifi.where()
